@@ -6,7 +6,9 @@ from typing import Iterator
 from mst_clustering.clustering_models import ClusteringModel
 from mst_clustering.cpp_adapters import SpanningForest, MstBuilder, DistanceMeasure
 
-np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
+import warnings
+
+warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
 
 
 class Pipeline:
